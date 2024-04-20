@@ -1,5 +1,14 @@
 source "https://rubygems.org"
 
+gem "sassc-rails"
+
+gem 'webpacker', '~> 5.4'
+
+
+gem 'mini_racer', platforms: :ruby
+
+gem 'bootstrap', '~> 4.6.0'
+
 ruby "3.3.0"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
