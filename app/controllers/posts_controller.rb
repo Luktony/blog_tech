@@ -3,7 +3,8 @@ class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
     # Retrieves all the posts and assigns them to the instance variable @posts.
   def index
-    @posts = Post.all
+    current_page = params[:page] || 1.to_i
+    @posts = Post.order(created_at: :desc).page(current_page).per(3)
   end
   def show  
   end
