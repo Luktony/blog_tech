@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :tags,except:[:show]
 
   root 'posts#index'
   # get "/show/:id", to: "posts#show"

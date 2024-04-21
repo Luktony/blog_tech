@@ -16,7 +16,7 @@ def new
     @post= Post.new(post_params)
 
     if @post.save
-      redirect_to @post
+      redirect_to @post,notice: "Post was successfully created."
     else
       render :new, status: :unprocessable_entity
     end
@@ -26,7 +26,7 @@ def new
   end
   def update
     if @post.update(post_params)
-      redirect_to @post
+      redirect_to @post,notice: "Post was successfully updated."
     else
       render :edit, status: :unprocessable_entity
     end
@@ -35,12 +35,12 @@ def new
 
   def destroy
     @post.destroy
-    redirect_to root_path
+    redirect_to root_path,notice: "Post was successfully destroyed."
     
   end
  private
   def post_params
-    params.require(:post).permit(:title, :body)
+    params.require(:post).permit(:title, :body, :tag_id)
   end
 
 def set_post
