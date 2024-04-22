@@ -1,0 +1,67 @@
+/* General Styles */
+body {
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    min-height: 100vh; /* Ensure content fills the viewport height */
+    margin: 0; /* Remove default body margin */
+  }
+  
+  
+  .container {
+    max-width: 1000px; /* Limit container width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 2rem; /* Add some padding for better spacing */
+  }
+  
+  /* Longer Featured Section */
+  .longer-featured {
+    /* Assuming the rendered content has specific classes you can target */
+    /* Style the content area for the longer featured section here */
+  }
+  
+  /* New Post Button */
+  .btn {
+    display: inline-block; /* Make the button display inline */
+    padding: 10px 20px; /* Add padding for the button text */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Add rounded corners */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer; /* Indicate clickable behavior */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .btn-primary {
+    margin: 5px;
+    background-color: #007bff; /* Blue background for primary button */
+    color: #fff; /* White text color */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0062cc; /* Darken blue on hover */
+  }
+  
+  /* Individual Posts */
+  .post {
+    background-color: #fff; /* Set background color for the posts */
+    border: 1px solid #ddd; /* Add a solid border */
+    border-radius: 5px; /* Add rounded corners */
+    padding: 1.5rem; /* Add some padding inside the post */
+    margin-bottom: 2rem; /* Add space between posts */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 800px;
+  }
+  
+  .post:hover {
+    border-color: #ccc; /* Change border color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+  }
+  
+  
+  /* Pagination */
+  .pagination {
+    /* Assuming the rendered pagination has specific classes you can target */
+    /* Style the pagination elements here, including spacing and navigation styles */
+  }
+  

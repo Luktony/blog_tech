@@ -1,0 +1,61 @@
+.post {
+    background-color: #fff; /* Light background for the article */
+    padding: 20px; /* Add some padding for better spacing */
+    border-radius: 5px; /* Add subtle rounded corners (optional) */
+    margin-bottom: 20px; /* Add spacing between articles */
+  }
+  
+  .post h2 {
+    font-size: 20px; /* Adjust heading size as needed */
+    margin-bottom: 10px; /* Add spacing below the title */
+  }
+  
+  .post-meta {
+    color: #ccc; /* Light gray color for metadata */
+    font-size: 14px; /* Adjust font size for metadata */
+    margin-bottom: 10px; /* Add spacing below metadata */
+  }
+  
+  .post p {
+    line-height: 1.5; /* Adjust line spacing for better readability */
+  }
+  
+  .btn-link {
+    color: #007bff; /* Blue color for "Continue reading..." link */
+    text-decoration: none;
+    padding: 5px 10px; /* Add padding for the button */
+    border: 1px solid #007bff; /* Add a thin blue border */
+    border-radius: 3px; /* Add rounded corners to the button */
+  }
+  
+  .btn-link:hover {
+    background-color: #007bff; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+  }
+  
+  .btn-secondary,
+  .btn-danger { /* Style shared buttons */
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .btn-secondary {
+    background-color: #ddd; /* Gray background for "Edit" button */
+    color: #333; /* Black text color */
+  }
+  
+  .btn-secondary:hover {
+    background-color: #ccc; /* Lighten background on hover */
+    color: #222; /* Darken text on hover */
+  }
+  
+  .btn-danger {
+    background-color: #dc3545; /* Red background for "Destroy" button */
+    color: #fff; /* White text color */
+  }
+  
+  .btn-danger:hover {
+    background-color: #c8233c; /* Darken red on hover */
+  }
+  

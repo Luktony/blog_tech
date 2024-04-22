@@ -1,0 +1,54 @@
+.form-inputs {
+    margin-bottom: 20px; /* Add spacing below form inputs */
+  }
+  
+  .form-inputs label {
+    display: block; /* Display labels on their own line */
+    margin-bottom: 5px; /* Add spacing below labels */
+    font-weight: bold; /* Make labels bold for readability */
+  }
+  
+  .form-inputs input[type="text"],
+  .form-inputs textarea {
+    width: 100%; /* Make input fields and textarea full width */
+    padding: 5px; /* Add padding for better user experience */
+    border: 1px solid #ccc; /* Add a thin border */
+    border-radius: 3px; /* Add rounded corners */
+    font-size: 16px; /* Adjust font size as needed */
+  }
+  
+  .form-inputs textarea {
+    height: 150px; /* Adjust textarea height as needed (overrides rows attribute) */
+  }
+  
+  .form-action {
+    display: flex; /* Arrange buttons horizontally */
+    justify-content: space-between; /* Space buttons evenly */
+  }
+  
+  .form-action .btn {
+    padding: 8px 15px; /* Adjust button padding */
+    border: none; /* Remove default button border */
+    border-radius: 3px; /* Add rounded corners */
+  }
+  
+  .btn-primary {
+    background-color: #007bff; /* Blue color for submit button */
+    color: #fff; /* White text color */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0067cc; /* Darken blue on hover */
+    color: #fff; /* Maintain white text on hover */
+  }
+  
+  .btn-secondary {
+    background-color: #ddd; /* Gray background for "Back" button */
+    color: #333; /* Black text color */
+  }
+  
+  .btn-secondary:hover {
+    background-color: #ccc; /* Lighten gray on hover */
+    color: #222; /* Darken text on hover */
+  }
+  

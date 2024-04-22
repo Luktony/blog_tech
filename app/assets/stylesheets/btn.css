@@ -1,0 +1,104 @@
+/* "btn-destroy","btn-edit","btn-back"*/
+
+.btn-action {
+    display: flex; /* Arrange buttons horizontally */
+    justify-content: space-between; /* Space buttons evenly */
+  }
+  
+  .btn-action .btn {
+    padding: 10px 20px; /* Adjust button padding */
+    border: none; /* Remove default button border */
+    border-radius: 25px; /* Create a rounded rectangle shape */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer; /* Indicate clickable behavior */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .btn-destroy {
+    margin: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 90px;
+    background-color: #dc3545; /* Red gradient start color */
+    background-image: linear-gradient(to right, #dc3545, #c8233c); /* Red gradient */
+    color: #fff; /* White text color */
+    display: flex; /* Arrange buttons horizontally */
+    justify-content: space-between; /* Space buttons evenly */
+    padding: 10px 20px; /* Adjust button padding */
+    border: none; /* Remove default button border */
+    border-radius: 25px; /* Create a rounded rectangle shape */
+    font-size: 12px; /* Adjust font size as needed */
+    cursor: pointer; /* Indicate clickable behavior */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  
+  }
+  
+  .btn-destroy:hover {
+    background-color: #c8233c; /* Darken red gradient on hover */
+    background-image: linear-gradient(to right, #c8233c, #b41a2e); /* Darken red gradient on hover */
+  }
+  
+  .btn-edit {
+    margin: 5px;
+    font-family: 'Courier New', Courier, monospace;
+
+    width: 30px;
+    background-color: #ffc107; /* Yellow gradient start color */
+    background-image: linear-gradient(to right, #ffc107, #dba507); /* Yellow gradient */
+    color: #333; /* Black text color */
+    display: flex; /* Arrange buttons horizontally */
+    justify-content: space-between; /* Space buttons evenly */
+    padding: 10px 10px; /* Adjust button padding */
+    border: none; /* Remove default button border */
+    border-radius: 25px; /* Create a rounded rectangle shape */
+    font-size: 12px; /* Adjust font size as needed */
+    cursor: pointer; /* Indicate clickable behavior */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    text-decoration: none; /* Remove underline from link */
+}
+  
+  .btn-edit:hover {
+    background-color: #dba507; /* Darken yellow gradient on hover */
+    background-image: linear-gradient(to right, #dba507, #c48c05); /* Darken yellow gradient on hover */
+  }
+  
+  .btn-back {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ddd; /* Gray gradient start color */
+    background-image: linear-gradient(to right, #ddd, #ccc); /* Gray gradient */
+    color: #333; /* Black text color */
+    display: flex; /* Arrange buttons horizontally */
+    justify-content: space-between; /* Space buttons evenly */
+    padding: 10px 10px; /* Adjust button padding */
+    border: none; /* Remove default button border */
+    border-radius: 25px; /* Create a rounded rectangle shape */
+    font-size: 12px; /* Adjust font size as needed */
+    cursor: pointer; /* Indicate clickable behavior */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    text-decoration: none; /* Remove underline from link */
+}
+  
+  .btn-back:hover {
+    background-color: #ccc; /* Lighten gray gradient on hover */
+    background-image: linear-gradient(to right, #ccc, #bbb); /* Lighten gray gradient on hover */
+  }
+  /* Assuming the link you want to style has a class of "continue-reading" */
+
+/* Assuming the link you want to style has a class of "continue-reading" */
+.continue-reading {
+    display: inline-block; /* Allow the element to behave like a box */
+    padding: 10px 20px; /* Add padding around the text */
+    background-color: darkgray ; /* Set the background color to purple*/
+    color:  #fff; /* Set the text color to white */
+    text-decoration: none; /* Remove underline from the link */
+    font-weight: bold; /* Make the text bolder */
+    text-align: center; /* Center the text horizontally */
+    border: none; /* Remove default link border */
+    cursor: pointer; /* Set cursor to indicate clickability */
+    border-radius: 5px; /* Add rounded corners */
+  }
+  
+  /* Optional hover effect to change the button's style on hover */
+  .continue-reading:hover {
+    background-color: #993399; /* Change background color on hover */
+  }
+  

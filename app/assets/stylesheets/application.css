@@ -1,5 +1,3 @@
-@import "bootstrap";
-
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
@@ -16,3 +14,11 @@
  *= require_tree .
  *= require_self
  */
+
+ /* styles.css */
+ @import "footer.css";
+ @import "navbar.css";
+ @import"post.css";
+ @import "btn.css";
+ @import "form.css";
+ 

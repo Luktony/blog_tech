@@ -1,0 +1,67 @@
+.navbar {
+    background-color: #fff; /* Set background color for the navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    padding: 1rem 0; /* Add some top and bottom padding */
+  }
+  
+  .container {
+    display: flex; /* Make elements in the container display horizontally */
+    justify-content: space-between; /* Space elements horizontally */
+    align-items: center; /* Align elements vertically at the center */
+  }
+  
+  .wrapper {
+   
+    position: fixed; /* Fix the wrapper to the top-left corner */
+    top: 0;
+    right: 0;
+    /* Adjust width and height if needed */
+    width: fit-content;
+    height: fit-content;
+    padding: 50px;
+  }
+  .wrapper2 {
+   
+    position:absolute; /* Fix the wrapper to the top-left corner */
+    top: 0;
+    left: 0;
+    /* Adjust width and height if needed */
+    width: fit-content;
+    height: fit-content;
+    padding-left: 150px;
+    padding-top: 50px;
+  }
+  
+  .nav-right {
+    color: #333; /* Set text color for nav-left */
+    font-weight: bold; /* Make the text bolder */
+    font-size: 1.5rem; /* Adjust the font size */
+    text-decoration: none; /* Remove underline from link */
+  }
+  .nav-left {
+    color: #333; /* Set text color for nav-left */
+    font-weight: bold; /* Make the text bolder */
+    font-size: 1.5rem; /* Adjust the font size */
+    text-decoration: none; /* Remove underline from link */
+  }
+  
+  
+  .navbar-brand {
+  
+    text-decoration: none; /* Remove underline from link */
+    color: #000; /* Set text color for brand name */
+    font-size: 2rem; /* Adjust brand name font size */
+    letter-spacing: 1px; /* Adjust spacing as needed */
+    background-image: linear-gradient(to right, #000000, #333333); /* Example gradient */
+  -webkit-background-clip: text; /* For older browsers */
+  background-clip: text;
+  color: transparent; /* Transparent text with gradient background */
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* Adjust shadow as needed */
+
+  }
+  
+  .navbar-brand:hover {
+    color: #333; /* Change text color on hover */
+  }
+ 
+  

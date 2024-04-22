@@ -1,12 +1,9 @@
 // Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
 import "@hotwired/turbo-rails"
 import "controllers"
-import "bootstrap"
-import { Tooltip, Popover } from "bootstrap"
-require("@popperjs/core")
 
 // The stylesheet location we created earlier
-require("../stylesheets/application.scss")
+
 
 // If you're using Turbolinks. Otherwise simply use: jQuery(function () {
 document.addEventListener("turbolinks:load", () => {
