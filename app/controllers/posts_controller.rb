@@ -5,9 +5,13 @@ class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
     # Retrieves all the posts and assigns them to the instance variable @posts.
   def index
-    tag=Tag.find_by_name(params[:tag]) if params[:tag].present?
-    @posts = Post.filter_by_tags(tag).order(created_at: :desc).page(current_page).per(3)
     @tags = Tag.sorted
+    tag=@tags.select{|t|t.name==params[:tag]}[0] if params[:tag].present?
+    
+    
+    
+    @posts = Post.includes(:tag,:user).filter_by_tags(tag).order(created_at: :desc).page(current_page).per(3)
+    
   
   end
   def show  
