@@ -7,3 +7,14 @@
 <%end%>
 <%=render'pagination'%>
 
+<%= content_for :tag_filter do%>
+<div >
+    <nav>
+        <%@tags.each do |tag| %>
+        <%=link_to tag.name,root_path(tag: tag.name),class:"filter-tag"%>
+        <%end%>
+               </nav>
+    
+    </div>
+
+<%end%>

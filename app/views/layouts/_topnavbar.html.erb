@@ -1,3 +1,5 @@
+
+<header>
  <div class="wrapper">
   <div class="nav-right">
     <span><%=render'layouts/account_links'%></span>
@@ -14,4 +16,8 @@
     <a class="navbar-brand" href="/">Blog Tech</a>
   </div>
 </nav>
+<div >
+<%= yield :tag_filter%>
+</div>
+</header>
 
