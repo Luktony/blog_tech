@@ -1,0 +1,4 @@
+<h5><%= month_day(comment.created_at)%></h5>
+<h6>Commenter:<%=comment.user.email%></h6>
+<p><%=comment.body%></p>
+  <%=button_to"Destoy",post_comment_path(@post,comment),method: :delete,data:{"turbo-confirm":"Are you sure?"},class:["btn-destroy"] if policy(comment).destroy?%>

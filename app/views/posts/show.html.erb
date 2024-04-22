@@ -9,11 +9,27 @@
       <div class="col-md-6">
         <h2><%=@post.title%></h2>
 
-        <p class="post-meta"><%=render 'post_detail',post: @post%></p>
+   <p class="post-meta"><%=render 'post_detail',post: @post%></p>
   <%=link_to"Edit",edit_post_path(@post),class:"btn-edit" if policy(@post).update? %>
   <%=button_to"Destoy",post_path(@post),method: :delete,data:{"turbo-confirm":"Are you sure?"},class:["btn-destroy"] if policy(@post).destroy?%>
   <%=link_to"Back",root_path,class:"btn-back"%>
+
+</div>
+<div>
+<h2>Comments</h2>
+<%= render @post.comments%>
+
+</div>
+
+<div>
+  <h2>Add a Comment:</h2>
+  <%=render'comments/form'%>
+  </div>
+
+
+</div>
       </div>
     </div>
   </div>
+
 </article>

@@ -2,7 +2,8 @@
 class PostsController < ApplicationController
   include Paginable
   before_action :authenticate_user!, except: %i[index show]
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :set_post, only: [ :edit, :update, :destroy]
+  before_action :set_tag, only: %i[new create edit update ] 
     # Retrieves all the posts and assigns them to the instance variable @posts.
   def index
     @tags = Tag.sorted
@@ -15,6 +16,8 @@ class PostsController < ApplicationController
   
   end
   def show  
+    @post = Post.includes(comments: :user ).find(params[:id])
+    authorize @post
   end
 
 def new
@@ -47,6 +50,8 @@ def new
     
   end
  private
+
+
   def post_params
     params.require(:post).permit(:title, :body, :tag_id)
   end
@@ -56,7 +61,10 @@ def set_post
   authorize @post
   
 end
-
+def set_tag
+  @tags = Tag.sorted
+  
+end
 end
 
 
