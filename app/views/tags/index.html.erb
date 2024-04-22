@@ -1,7 +1,6 @@
-<p style="color: green"><%= notice %></p>
+
 
 <%=link_to 'New tag',new_tag_path,class:"btn btn-primary" %>
-
 
 <h1>Tags </h1>
 
@@ -13,7 +12,10 @@
       <%=button_to"Destoy",tag,method: :delete,data:{"turbo-confirm":"Are you sure?"},class:"btn btn-danger" %>
 
     </p>
+    
   <% end %>
+
+  <%= link_to "Back", root_path %>
 </div>
 
 

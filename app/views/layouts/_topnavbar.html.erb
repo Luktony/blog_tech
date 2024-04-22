@@ -1,11 +1,11 @@
  <div class="wrapper">
   <div class="nav-right">
-    <span>Login</span>
+    <span><%=render'layouts/account_links'%></span>
   </div>
 </div>
 <div class="wrapper2">
   <div class="nav-left">
-    <span>Tags</span>
+    <span><%=link_to"Tags",tags_path if policy(:tag).index? %></span>
   </div>
 </div>
 

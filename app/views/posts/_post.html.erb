@@ -9,12 +9,13 @@
       </div>
       <div class="col-md-6">
         <h2><%=post.title%></h2>
-        <p class="post-meta"><%=month_day(post.created_at)%></p>
+        <p class="post-meta"> <%=month_day(post.created_at)%><%=post.user.email%></p>
       
         <p><%=truncate(post.body,length:150)%></p>
+         <%= post.tag.name %>
         <p> <%= link_to'Continue reading...',post,class:"continue-reading"%> </p>
-     <%=link_to"Edit",edit_post_path(post),class:"btn-edit" %>
-    <%=button_to"Destroy",post_path(post),method: :delete,data:{"turbo-confirm":"Are you sure?"},class:"btn-destroy" %>
+     <%=link_to"Edit",edit_post_path(post),class:"btn-edit"if policy(post).update? %>
+    <%=button_to"Destroy",post_path(post),method: :delete,data:{"turbo-confirm":"Are you sure?"},class:"btn-destroy"if policy(post).destroy?%>
       </div>
     </div>
   </div>

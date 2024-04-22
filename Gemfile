@@ -59,6 +59,7 @@ group :development, :test do
 end
 
 group :development do
+  gem "letter_opener", "~> 1.10"
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 
@@ -80,3 +81,7 @@ gem "simple_form", "~> 5.3"
 gem "kaminari", "~> 1.2"
 
 gem "devise", "~> 4.9"
+
+
+
+gem "pundit", "~> 2.3"

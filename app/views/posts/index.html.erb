@@ -1,7 +1,7 @@
 
 <%= render'longer_featured'%>
 
-<%=link_to 'New Post',new_post_path,class:"btn btn-primary" %>
+<%=link_to 'New Post',new_post_path,class:"btn btn-primary" if user_signed_in? %>
 <% @posts.each do |post|%>
 <%=render post%>
 <%end%>

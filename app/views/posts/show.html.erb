@@ -8,9 +8,10 @@
       </div>
       <div class="col-md-6">
         <h2><%=@post.title%></h2>
-        <p class="post-meta"><%=month_day(@post.created_at)%></p>
-  <%=link_to"Edit",edit_post_path(@post),class:"btn-edit" %>
-  <%=button_to"Destoy",post_path(@post),method: :delete,data:{"turbo-confirm":"Are you sure?"},class:["btn-destroy"]%>
+
+        <p class="post-meta"><%=month_day(@post.created_at)%> by <%=@post.user.email%></p>
+  <%=link_to"Edit",edit_post_path(@post),class:"btn-edit" if policy(@post).update? %>
+  <%=button_to"Destoy",post_path(@post),method: :delete,data:{"turbo-confirm":"Are you sure?"},class:["btn-destroy"] if policy(@post).destroy?%>
   <%=link_to"Back",root_path,class:"btn-back"%>
       </div>
     </div>
