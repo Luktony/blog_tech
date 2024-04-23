@@ -1,6 +1,6 @@
 databases:
-  - name: BlogTech
-    databaseName: dbpostgres
+  - name: mysite
+    databaseName: mysite
     user: mysite
     plan: free
 
